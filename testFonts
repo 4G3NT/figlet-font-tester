@@ -9,9 +9,9 @@ Usage:
 $0 [-ht] [-d] [message]
 
 OPTIONS
-  -h	display this help
-  -t	specify this option if you have toilet fonts aswell
-  -d	font directory defaults to $fontDir
+  -h	Display this help.
+  -t	Use this option if you have toilet fonts as well.
+  -d	Specify the font directory (default: $fontDir).
 EOF
 )
 
