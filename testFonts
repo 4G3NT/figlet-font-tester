@@ -19,7 +19,7 @@ EOF
 
 err()
 {
-	[ -n "$ENABLE_COLORS" ] && {
+	[ "$ENABLE_ERROR_COLORS" -eq 1 ] && {
 		red="\033[31m"
 		reset="\033[0m"
 	}
