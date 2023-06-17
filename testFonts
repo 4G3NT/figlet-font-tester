@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ENABLE_COLORS=1
+ENABLE_ERROR_COLORS=1
 
 fontDir="/usr/share/figlet"
 toiletFlag=
