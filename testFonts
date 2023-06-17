@@ -1,5 +1,7 @@
 #!/bin/sh
 
+ENABLE_COLORS=1
+
 fontDir="/usr/share/figlet"
 toiletFlag=
 
@@ -17,8 +19,10 @@ EOF
 
 err()
 {
-	red="\033[31m"
-	reset="\033[0m"
+	[ -n "$ENABLE_COLORS" ] && {
+		red="\033[31m"
+		reset="\033[0m"
+	}
 	for arg in "$@"; do
 		printf "%berror%b: %s\n" "$red" "$reset" "$arg" >&2
 	done
